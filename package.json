@@ -1,0 +1,23 @@
+{
+  "name": "@websamurai/mcp-wp-remote",
+  "version": "1.0.2",
+  "description": "STDIO to WordPress JSON-RPC bridge for MCP protocol",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "mcp-wp-remote": "index.js"
+  },
+  "keywords": [
+    "mcp",
+    "wordpress",
+    "json-rpc",
+    "stdio"
+  ],
+  "author": "Kiera Howe",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
