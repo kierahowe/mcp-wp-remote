@@ -1,6 +1,6 @@
-# @samuraiwp/mcp-wp-remote
+# @websamurai/mcp-wp-remote
 
-A STDIO bridge for connecting to WordPress sites via the Model Context Protocol (MCP). This package enables communication between MCP clients and WordPress installations running the SamuraiWP plugin.
+A STDIO bridge for connecting to WordPress sites via the Model Context Protocol (MCP). This package enables communication between MCP clients and WordPress installations running the websamurai plugin.
 
 ## Overview
 
@@ -9,19 +9,19 @@ A STDIO bridge for connecting to WordPress sites via the Model Context Protocol 
 ## Installation
 
 ```bash
-npm install -g @samuraiwp/mcp-wp-remote
+npm install -g @websamurai/mcp-wp-remote
 ```
 
 Or use directly with npx:
 
 ```bash
-npx @samuraiwp/mcp-wp-remote <url> <api-key>
+npx @websamurai/mcp-wp-remote <url> <api-key>
 ```
 
 ## Requirements
 
 - Node.js (ES modules support required)
-- WordPress site with SamuraiWP plugin installed
+- WordPress site with websamurai plugin installed
 - Valid API key from your WordPress installation
 
 ## Usage
@@ -36,7 +36,7 @@ mcp-wp-remote <url> <api-key>
 - `<url>` - Your WordPress site URL (e.g., `https://example.com`)
 - `<api-key>` - API key for authentication (Bearer token)
 
-The endpoint path `/wp-json/samur-ai/v1/mcp` is automatically appended to the URL if not present.
+The endpoint path `/wp-json/websamurai/v1/mcp` is automatically appended to the URL if not present.
 
 ### Example
 
@@ -47,7 +47,7 @@ mcp-wp-remote https://mysite.com my-secret-api-key
 Or with the full endpoint:
 
 ```bash
-mcp-wp-remote https://mysite.com/wp-json/samur-ai/v1/mcp my-secret-api-key
+mcp-wp-remote https://mysite.com/wp-json/websamurai/v1/mcp my-secret-api-key
 ```
 
 ### As MCP Server Configuration
@@ -133,9 +133,9 @@ The bridge handles various error scenarios:
 
 ## WordPress Setup
 
-1. Install the SamuraiWP plugin on your WordPress site
+1. Install the websamurai plugin on your WordPress site
 2. Generate an API key in the plugin settings
-3. Ensure the REST API endpoint is accessible at `/wp-json/samur-ai/v1/mcp`
+3. Ensure the REST API endpoint is accessible at `/wp-json/websamurai/v1/mcp`
 
 ## Development
 
@@ -164,10 +164,10 @@ MIT
 
 ## Author
 
-SamuraiWP Team
+websamurai Team
 
 ## Support
 
 For issues and questions:
-- WordPress Plugin: [SamuraiWP](https://samuraiwp.com)
+- WordPress Plugin: [WebSamurai](https://www.websamurai.io)
 - GitHub Issues: Report issues in the repository
